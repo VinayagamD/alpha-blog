@@ -49,6 +49,8 @@ test:
 #
 production:
   <<: *default
-  database: alpha-blog_production
-  username: alpha-blog
-  password: <%= ENV['ALPHA-BLOG_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  host: ec2-54-225-182-108.compute-1.amazonaws.com
+  database: d1jmu5a7ruspro
+  username: yeyoeftiylhnhb
+  password: 27993fba79fed8f64e798f56c917181d11b8fe27524c7866d320c8f1243ed438
