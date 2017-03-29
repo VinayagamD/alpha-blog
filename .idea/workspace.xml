@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4d8a74b-ed7b-47b4-8232-4006f7d8e4a2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -532,7 +533,7 @@
       <option name="presentableId" value="Default" />
       <updated>1490742673901</updated>
       <workItem from="1490742675346" duration="1389000" />
-      <workItem from="1490748791844" duration="1372000" />
+      <workItem from="1490748791844" duration="1432000" />
     </task>
     <task id="LOCAL-00001" summary="IDE Update">
       <created>1490749296495</created>
@@ -545,7 +546,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2761000" />
+    <option name="totallyTimeSpent" value="2821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
