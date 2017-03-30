@@ -11,5 +11,30 @@
       <user-name>vinay</user-name>
       <introspection-schemas>*:alpha_blog</introspection-schemas>
     </data-source>
+    <data-source name="Rails alpha-blog: production" uuid="8e506b15-2a0c-4de4-a35e-948b8e329464">
+      <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>eveirgevcadplj</user-name>
+      <introspection-schemas>dcfu8nlb78o7sq:public</introspection-schemas>
+      <ssl-config>
+        <enabled>true</enabled>
+      </ssl-config>
+    </data-source>
+    <data-source name="Rails alpha-blog: test" uuid="6f8f2cd8-ea27-462d-8345-831bfb043a1d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>vinay</user-name>
+    </data-source>
+    <data-source name="Rails alpha-blog: development" uuid="9afc2150-b3cf-4b5f-8c7d-07891ad4e8e6">
+      <database-info product="MySQL" version="5.5.5-10.1.19-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <user-name>vinay</user-name>
+      <introspection-schemas>*:alpha_blog</introspection-schemas>
+    </data-source>
   </component>
 </project>
