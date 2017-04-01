@@ -1,0 +1,21 @@
+<% if obj.errors.any? %>
+    <div class="row">
+      <div class="col-8 offset-2">
+        <div class="card card-danger">
+          <div class="card-header text-center">
+            <h5 class="h5 text-white"> <%= pluralize(obj.errors.count, "error") %>
+              prohibited this article from
+              beign saved</h5>
+          </div>
+          <div class="card-block">
+            <ul class="list-group">
+              <% obj.errors.full_messages.each do |msg| %>
+                  <li class="list-group-item list-group-item-danger small"><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        <
+      </div>
+    </div>
+<% end %>
