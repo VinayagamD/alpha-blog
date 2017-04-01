@@ -1,8 +1,8 @@
-<div class="card card-success alpha-form">
+<div class="card card-success alpha-form" <% if @article.errors.any? %>style="margin-bottom: 5%"<% end %> >
   <div class="card-header text-center text-white">
     <h1 class="h1 alpha-title">Create an article</h1>
   </div>
-  <div class="card-block">
+  <div class="card-block" >
     <%= render 'form' %>
   </div>
 </div>
