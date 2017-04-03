@@ -1,9 +1,16 @@
-
-<div class="card card-success alpha-form" <% if @article.errors.any? %> style="margin-bottom: 5%" <% end %> >
-  <div class="card-header text-center text-white">
-    <h1 class="h1 alpha-title">Edit existing Article</h1>
-  </div>
-  <div class="card-block">
-    <%= render 'form' %>
+<div class="row">
+  <div class="col-10 offest-1">
+    <div class="card card-success alpha-form"
+         <% if @article.errors.any? %>
+         style="margin-bottom: 5%"
+         <% end %>
+         >
+      <div class="card-header text-center text-white">
+        <h2 class="h2 alpha-title">Edit existing Article</h2>
+      </div>
+      <div class="card-block">
+        <%= render 'form' %>
+      </div>
+    </div>
   </div>
 </div>
