@@ -30,7 +30,24 @@ body{
   border: #95989A;
   height: 550px;
 }
+.alpha-listing{
+  margin-top: 2%;
+  background-color:  rgba(0,36,35,0.51);
+  box-shadow:  rgba(0,0,0,0.57);
+  border: #95989A;
 
+}
+
+.article-title{
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.article-body{
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+
+}
 .alpha-form{
   margin-top: 10%;
   background-color:  rgba(0,36,35,0.51);
