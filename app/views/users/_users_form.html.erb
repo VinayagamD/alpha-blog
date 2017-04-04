@@ -31,7 +31,7 @@
         <hr class="hr " style="margin-top: 5%">
         <div class="form-group">
           <div class="col-12 text-right">
-            <%= f.submit name ,class: "btn btn-primary btn-lg text-white" %>
+            <%= f.submit(@user.new_record? ? "Sign up": "Update account" ,class: "btn btn-primary btn-lg text-white") %>
           </div>
         </div>
 
