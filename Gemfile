@@ -42,7 +42,7 @@ group :development, :test do
   # Use mysql as the database for Active Record
   gem 'mysql2', '>= 0.3.18', '< 0.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  gem 'byebug', github: 'deivid-rodriguez/byebug', branch: 'master'
 end
 
 group :development do

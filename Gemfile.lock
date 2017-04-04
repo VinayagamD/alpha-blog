@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/deivid-rodriguez/byebug.git
+  revision: d7f6a399e4fc7fd3cf2b5468dcf8252f2b706303
+  branch: master
+  specs:
+    byebug (9.0.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -156,7 +163,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
-  byebug
+  byebug!
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
