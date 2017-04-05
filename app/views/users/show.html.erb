@@ -13,7 +13,9 @@
           <div class="card-header text-center text-white">
             <h4 class="h4 alpha-title"> <%= @user.username %>'s articles </h4>
           </div>
-          <%= render 'articles/article', obj:@user.articles %>
+          <%= will_paginate(@user_articles) %>
+          <%= render 'articles/article', obj:@user_articles %>
+          <%= will_paginate(@user_articles)  %>
         </div>
       </div>
     </div>

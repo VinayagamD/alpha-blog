@@ -7,12 +7,15 @@
         <h2 class="h2 alpha-title " align="center">All Alpha Bloggers</h2>
       </div>
       <div class="card-block text-center">
+        <%= will_paginate %>
         <% if @users.any?
              @users.each do |user| %>
                 <%= render 'user', user:user%>
 
             <% end
                end %>
+        <%= will_paginate %>
+
       </div>
     </div>
   </div>

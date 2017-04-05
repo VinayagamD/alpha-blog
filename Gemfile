@@ -12,7 +12,8 @@ gem 'rails', '~> 5.0.2'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'bootstrap', '~> 4.0.0.alpha6'
-
+gem 'will_paginate', '~> 3.1.5'
+gem 'bootstrap-will_paginate', '~> 0.0.11'
   gem 'rails-assets-tether'
 
 gem 'sass-rails', '~> 5.0'

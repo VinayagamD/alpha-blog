@@ -6,9 +6,15 @@
         <div class="text-right">
           <%= link_to "Create new article", new_article_path, class: " text-white" %>
         </div>
+        <div align="center">
+              <%= will_paginate class: "pagination"%>
+        </div>
       </div>
 
       <%= render 'article' , obj: @articles %>
+      <div align="center">
+        <%= will_paginate class: "pagination" %>
+      </div>
     </div>
   </div>
 </div>
