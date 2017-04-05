@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_users, only: [:edit, :update, :show]
-  before_action :require_user, except: [:index, :show, :new]
+  before_action :require_user, except: [:index, :show, :new, :create]
   def new
     @user = User.new
   end
