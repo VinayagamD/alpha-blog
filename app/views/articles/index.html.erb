@@ -3,9 +3,11 @@
     <div class="card card-primary alpha-listing ">
       <div class="card-header  text-white">
         <h2 class="h2 alpha-title " align="center">Listing all articles</h2>
+        <% if logged_in? %>
         <div class="text-right">
           <%= link_to "Create new article", new_article_path, class: " text-white" %>
         </div>
+         <% end %>
         <div align="center">
               <%= will_paginate class: "pagination"%>
         </div>
