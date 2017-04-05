@@ -2,6 +2,8 @@
   <div class="col-10 offset-1 ">
     <div class="card card-success alpha-form text-white">
       <div class="card-header text-center ">
+        <% if @article.user %> <h3 class="h3">Created By:</h3><% end %>
+        <%=  render 'users/user', user:@article.user if @article.user%>
         <h2 class="h2 alpha-title">Title: <%= @article.title %></h2>
       </div>
       <div class="card-block  col-8 offest-2">
