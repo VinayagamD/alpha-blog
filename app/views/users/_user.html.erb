@@ -7,5 +7,9 @@
   </div>
   <div class="card-footer">
     <small class="h6"><%= pluralize(user.articles.count, "article") if user.articles %></small>
+    <% if logged_in? and current_user.admin? and !user.admin? %>
+    <small class="h6"><%= link_to "Delete this user", user_path(user), method: :delete,
+      data: {confirm: "Are you sure you want to delete the user and all there articles"}%></small>
+    <% end %>
   </div>
 </div>

@@ -119,7 +119,12 @@
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="39" parent="17" name="PRIMARY">
+    <column id="39" parent="17" name="admin">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="40" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
