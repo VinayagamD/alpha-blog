@@ -11,16 +11,19 @@
           </div>
           <hr>
           <div class="blockquote article-meta-details">
-            <small>Created By: <%= article.user.username if article.user%>
-              <%= time_ago_in_words(article.created_at)  %> ago,
-              last updated: <%=  time_ago_in_words(article.updated_at) %> ago</small>
+            <small>Created By: <%= article.user.username if article.user %>
+              <%= time_ago_in_words(article.created_at) %> ago,
+              last updated: <%= time_ago_in_words(article.updated_at) %> ago
+            </small>
           </div>
         </div>
-        <div class=" card-footer text-right">
-          <%= link_to "Edit", edit_article_path(article), class: "text-white btn btn-xs btn-primary" %>  |
-          <%= link_to "Delete", article_path(article), method: :delete,
-                      data: {confirm: "Are you sure you want to delete the article?"},
-                      class: "text-white btn btn-xs btn-danger" %>
-        </div>
+        <% if logged_in? && (current_user == article.user if article.user) %>
+            <div class=" card-footer text-right">
+              <%= link_to "Edit", edit_article_path(article), class: "text-white btn btn-xs btn-primary" %>  |
+              <%= link_to "Delete", article_path(article), method: :delete,
+                          data: {confirm: "Are you sure you want to delete the article?"},
+                          class: "text-white btn btn-xs btn-danger" %>
+            </div>
+        <% end %>
     <% end %>
 <% end %>
