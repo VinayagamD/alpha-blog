@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-10 offset-1">
+    <div class="card card-success alpha-form"
+         <% if @category.errors.any? %>
+         style="margin-bottom: 5%"
+         <% end %>
+         >
+      <div class="card-header text-center text-white">
+        <h2 class="h2 alpha-title">Create new category</h2>
+      </div>
+      <div class="card-block">
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</div>

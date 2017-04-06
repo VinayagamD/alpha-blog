@@ -1,0 +1,23 @@
+<div class="row"  <% if @categories.any? %> style="margin-bottom: 5%;" <%end%> >
+  <div class="col-12">
+    <div class="card card-primary alpha-listing ">
+      <div class="card-header  text-white">
+        <h2 class="h2 alpha-title " align="center">Listing all articles</h2>
+
+            <div class="text-right">
+              <%= link_to "Create new category", new_category_path, class: " text-white" %>
+            </div>
+
+
+      </div>
+      <div align="center">
+        <%= will_paginate class: "pagination" %>
+      </div>
+
+      <%= render 'category' , obj: @categories %>
+      <div align="center">
+        <%= will_paginate class: "pagination" %>
+      </div>
+    </div>
+  </div>
+</div>
