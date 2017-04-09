@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170405214602) do
+ActiveRecord::Schema.define(version: 20170409194020) do
+
+  create_table "article_categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.integer  "article_id"
+    t.integer  "category_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["article_id"], name: "index_article_categories_on_article_id", using: :btree
+    t.index ["category_id"], name: "index_article_categories_on_category_id", using: :btree
+  end
 
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "title"
@@ -36,4 +45,6 @@ ActiveRecord::Schema.define(version: 20170405214602) do
     t.boolean  "admin",           default: false
   end
 
+  add_foreign_key "article_categories", "articles"
+  add_foreign_key "article_categories", "categories"
 end
