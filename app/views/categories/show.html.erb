@@ -4,7 +4,12 @@
       <div class="card-header  text-white">
         <h2 class="h2 alpha-title " align="center"> <%= "Category: " + @category.name%></h2>
         <div align="center">
-          <%= will_paginate @category_articles%>
+          <% if logged_in? and current_user.admin? %>
+          <div class="row">
+          <span class="badge badge-primary "> <%= link_to "Edit Category Name", edit_category_path(@category), class: "text-white" %></span>
+          </div>
+             <% end %>
+            <%= will_paginate @category_articles%>
         </div>
       </div>
 
