@@ -9,6 +9,15 @@
           <div class="blockquote article-body">
             <%= truncate(article.description, length: 100) %>
           </div>
+          <div class="card-blockquote">
+            <% if article.categories.any? %>
+                <h6 class="h6"> Categories
+                  <% article.categories.each do |category| %>
+                      <%= render 'categories/category', category: category %>
+                  <% end %>
+                </h6>
+            <% end %>
+          </div>
           <hr>
           <div class="blockquote article-meta-details">
             <small>Created By: <%= article.user.username if article.user %>

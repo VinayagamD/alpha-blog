@@ -7,16 +7,16 @@
             <div class="text-right">
               <%= link_to "Create new category", new_category_path, class: " text-white" %>
             </div>
-
-
       </div>
-      <div align="center">
+      <div class="text-center">
+      <div align="center text-center">
         <%= will_paginate class: "pagination" %>
       </div>
 
-      <%= render 'category' , obj: @categories %>
-      <div align="center">
+      <%= render 'categories', obj: @categories %>
+      <div align="center text-center">
         <%= will_paginate class: "pagination" %>
+      </div>
       </div>
     </div>
   </div>

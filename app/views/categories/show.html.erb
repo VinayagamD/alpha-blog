@@ -1,0 +1,17 @@
+<div class="row"  <% if @category.articles.any? %> style="margin-bottom: 5%;" <%end%> >
+  <div class="col-12">
+    <div class="card card-primary alpha-listing ">
+      <div class="card-header  text-white">
+        <h2 class="h2 alpha-title " align="center"> <%= "Category: " + @category.name%></h2>
+        <div align="center">
+          <%= will_paginate @category_articles%>
+        </div>
+      </div>
+
+      <%= render 'articles/article' , obj: @category_articles %>
+      <div align="center">
+        <%= will_paginate @category_articles %>
+      </div>
+    </div>
+  </div>
+</div>

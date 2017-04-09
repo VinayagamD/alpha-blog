@@ -1,14 +1,1 @@
-<% if obj.any? %>
-    <% obj.each do |category| %>
-
-        <div class="card-block text-white ">
-
-          <div class="article-title">
-            <%= link_to category.name, category_path(category), class: "text-white" %>
-          </div>
-
-          <hr>
-
-        </div>
-    <% end %>
-<% end %>
+<span class="badge badge-primary"><%= link_to category.name, category_path(category) , class: "text-white" %> &nbsp; </span>
